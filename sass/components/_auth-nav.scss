@@ -1,0 +1,33 @@
+.auth-nav {
+  display: flex;
+  align-self: center;
+  margin-left: 0;
+}
+
+.auth-nav__item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.auth-nav__contact {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+  color: $accent-color;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  transition: color $cubic;
+
+    &:hover, &:focus {
+    color: $button-link-color;
+    }
+
+}
+
+.auth-nav__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
