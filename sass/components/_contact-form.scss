@@ -105,7 +105,8 @@ position: relative;
 }
 
 .checkbox__icon {
-  width: 16px;
+  max-width: 16px;
+  width: 100%;
   height: 15px;
   border: 2px solid $primary-text-color;
   border-radius: 2px;
@@ -135,7 +136,8 @@ position: relative;
 
 .form-submit-button {
   height: 50px;
-  width: 200px;
+  max-width: 200px;
+  width: 100%;
   padding: 0;
   margin: 0 auto;
   color: $primary-white-color;

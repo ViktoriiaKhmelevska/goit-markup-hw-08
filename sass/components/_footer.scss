@@ -1,6 +1,6 @@
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  // padding-top: 60px;
+  // padding-bottom: 60px;
   background-color: $bgr-footer;
 }
 
@@ -56,14 +56,14 @@ button {
 }
 
 .footer__nav {
-  display: flex;
-  align-items: center;
-  gap: 94px;
+  // display: flex;
+  // align-items: center;
+  // gap: 94px;
 }
 
 .footer__social {
   padding: 0;
-  margin-top: -62px;
+  // margin-top: -62px;
   display: block;
 }
 
@@ -74,7 +74,8 @@ button {
 }
 
 .social__item {
-  width: 44px;
+  max-width: 44px;
+  width: 100%;
   height: 44px;
 }
 
@@ -109,12 +110,12 @@ button {
 
 .footer-form {
   padding: 0;
-  margin-top: -52px;
+  // margin-top: -52px;
   display: block;
 }
 
 .footer-form__position {
-  display: flex;
+  // display: flex;
   gap: 10px;
  }
 
@@ -132,7 +133,8 @@ button {
 
 .footer-form__input {
   height: 50px;
-  width: 358px;
+  max-width: 358px;
+  width: 100%;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -161,13 +163,14 @@ button {
   }
 
 .footer-form__submit {
-  display: flex;
+  // display: flex;
   gap: 10px;
   align-items: center;
   justify-content: center;
   background: inherit;
   height: 50px;
-  width: 200px;
+  max-width: 200px;
+  width: 100%;
   background: $button-link-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;

@@ -1,8 +1,18 @@
 .auth-nav {
+  display: none;
+
+  @media (min-width: 481px) {
+  display: block;
+  // flex-direction: column;
+  // margin-left: 0;
+  }
+  
+  @media (min-width: $bp-tablet){
   display: flex;
+  flex-direction: row;
   align-self: center;
-  margin-left: 0;
-}
+   }
+ }
 
 .auth-nav__item:not(:first-child) {
   margin-left: 30px;
@@ -18,14 +28,13 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-
   transition: color $cubic;
 
     &:hover, &:focus {
     color: $button-link-color;
     }
-
-}
+ 
+ }
 
 .auth-nav__icon {
   margin-right: 10px;
