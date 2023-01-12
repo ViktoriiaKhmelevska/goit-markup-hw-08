@@ -12,9 +12,19 @@
 }
 
 .command__position {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @media (min-width: 576px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -5px;
+  }
+    
+  }
   // display: flex;
   // gap: 30px;
-}
 
 .command__li {
   background-color: $primary-white-color;

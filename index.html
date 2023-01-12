@@ -174,25 +174,31 @@
           </ul>
         </div>
       </section>
-      <!--block3 - portfolio-->
+      <!--block3 - title-work-->
       <section class="section title-work__top">
         <div class="container">
           <h2 class="title-work">Чим ми займаємося</h2>
           <ul class="title-work__position">
             <li class="title-work__img">
-              <img src="./images/photojob1.jpg" alt="Проєкт1" width="370" height="290" />
+              <img 
+              srcset="./images/photojob1-desktop@1x.jpg 1x, ./images/photojob1-desktop@2x.jpg 2x"
+              src="./images/photojob1.jpg" alt="Проєкт1" width="370" height="290" />
             <div class="title-work__bgr">
               <p class="title-work__text">Десктопні додатки</p>
             </div>
             </li>
             <li class="title-work__img">
-              <img src="./images/photojob2.jpg" alt="Проєкт2" width="370" height="290" />
+              <img 
+              srcset="./images/photojob2-desktop@1x.jpg 1x, ./images/photojob2-desktop@2x.jpg 2x"
+              src="./images/photojob2.jpg" alt="Проєкт2" width="370" height="290" />
              <div class="title-work__bgr">
               <p class="title-work__text">Мобільні додатки</p>
             </div>
           </li>
             <li class="title-work__img">
-              <img src="./images/photojob3.jpg" alt="Проєкт3" width="370" height="290" />
+              <img 
+              srcset="./images/photojob3-desktop@1x.jpg 1x, ./images/photojob3-desktop@2x.jpg 2x"
+              src="./images/photojob3.jpg" alt="Проєкт3" width="370" height="290" />
              <div class="title-work__bgr">
               <p class="title-work__text">Дизайнерські рішення</p>
             </div>
@@ -206,7 +212,18 @@
           <h2 class="command">Наша команда</h2>
           <ul class="command__position">
             <li class="command__li">
-              <img src="./images/photo-igor.jpg" alt="Ігор Дем'яненко" width="270" height="260" />
+              <img 
+              srcset="
+              ./images/photo-igor-mobile1.ipg   320w,
+              ./images/photo-igor-mobile2.ipg   456w,
+              ./images/photo-igor-tablet@1x.ipg   620w,
+              ./images/photo-igor-tablet@2x.ipg   786w,
+              ./images/photo-igor-desktop@1x.ipg   978w,
+              ./images/photo-igor-desktopt@2x.ipg   1200w
+              "
+              src="./images/photo-igor.ipg" alt="Ігор Дем'яненко"
+              sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+              />
               <div class="command__text">
                 <h3 class="command__title">Ігор Дем'яненко</h3>
                 <p class="command__filter">Product Designer</p>
