@@ -860,6 +860,17 @@ img {
   margin: 0;
   list-style: none;
 }
+@media (min-width: 576px) {
+  .command__position {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -5px;
+  }
+}
+
 .command__li {
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
