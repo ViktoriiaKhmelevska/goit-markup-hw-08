@@ -55,11 +55,21 @@ button {
   text-decoration: none;
 }
 
-// .footer__nav {
-//   // display: flex;
-//   // align-items: center;
-//   // gap: 94px;
-// }
+.footer__nav {
+ @media (max-width: 468px) {
+  display: block;
+  }
+
+   @media screen and (min-width: 469px) and (max-width: 1199px) {
+  display: block;
+  }
+ 
+  @media (min-width: 1200px) {
+  display: flex;
+  align-items: center;
+  gap: 94px;
+}
+  }
 
 .footer__social {
   padding: 0;
@@ -115,7 +125,7 @@ button {
 }
 
 .footer-form__position {
-  // display: flex;
+  display: flex;
   gap: 10px;
  }
 
@@ -163,7 +173,7 @@ button {
   }
 
 .footer-form__submit {
-  // display: flex;
+  display: flex;
   gap: 10px;
   align-items: center;
   justify-content: center;
