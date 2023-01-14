@@ -250,18 +250,23 @@
           <h2 class="command">Наша команда</h2>
           <ul class="command__position">
             <li class="command__li">
-              <img 
-              srcset="
-              ./images/photo-igor-mobile1.ipg   320w,
-              ./images/photo-igor-mobile2.ipg   456w,
-              ./images/photo-igor-tablet@1x.ipg   620w,
-              ./images/photo-igor-tablet@2x.ipg   786w,
-              ./images/photo-igor-desktop@1x.ipg   978w,
-              ./images/photo-igor-desktopt@2x.ipg   1200w
-              "
-              src="./images/photo-igor.ipg" alt="Ігор Дем'яненко"
-              sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+              <picture>
+                  <source media="(min-width: 1200px)" 
+                    srcset="./images/photo-igor-desktop@1x.ipg 1x, 
+                      ./images/photo-igor-desktopt@2x.ipg 2x"
+                    type="image/jpg">
+                  <source media="(min-width: 768px)" 
+                    srcset="./images/photo-igor-tablet@1x.ipg 1x, 
+                      ./images/photo-igor-tablet@2x.ipg 2x"
+                    type="image/jpg">
+                   <source media="(max-width: 767px)" 
+                    srcset="./images/photo-igor-mobile@1x.ipg 1x, 
+                      ./images/photo-igor-mobile@2x.ipg 2x"
+                    type="image/jpg">
+              <img src="./images/photo-igor-mobile@1x.jpg" alt="Ігор Дем'яненко"
+              width="450" height="460" loading="lazy"
               />
+        </picture>
               <div class="command__text">
                 <h3 class="command__title">Ігор Дем'яненко</h3>
                 <p class="command__filter">Product Designer</p>
