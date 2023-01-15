@@ -4,12 +4,10 @@
 }
 
 .site-nav__menu {
-  display: none;
+    display: flex;
 
-  @media (min-width: $bp-mobile) {
-  display: flex;
-  align-items: center;
-  // margin-left: 93px;
+  @media (max-width: $bp-tablet) {
+  display: none;
   }
 
 }

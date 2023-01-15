@@ -1,17 +1,15 @@
 .auth-nav {
-  display: none;
+  display: flex;
 
-  @media (min-width: 480px) {
-  display: block;
-  // flex-direction: column;
-  // margin-left: 0;
+  @media (max-width: $bp-tablet) {
+  display: none;
   }
   
-  @media (min-width: $bp-tablet){
-  display: flex;
-  flex-direction: row;
-  align-self: center;
-   }
+  // @media (min-width: $bp-tablet){
+  // display: flex;
+  // flex-direction: row;
+  // align-self: center;
+  //  }
  }
 
 .auth-nav__item:not(:first-child) {
