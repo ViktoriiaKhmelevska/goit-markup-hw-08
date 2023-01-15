@@ -2,6 +2,7 @@
   display: flex;
   gap: 30px;
    flex-wrap: wrap;
+   justify-content: space-between;
 
    @media (min-width: 1200px) {
     flex-wrap: nowrap;
@@ -10,15 +11,16 @@
 
 .client__item {
    height: 92px;
+    // max-width: 100%;
     @media (max-width: 479px){
-    max-width: 50%;
+    flex-basis: 210px;
   }
 
  @media (min-width: 768px){
-  flex-basis: 33.33%;
+  flex-basis: 226px;
  }
   @media (min-width: 1200px){
-  flex-basis: 16.66%;
+  flex-basis: 170px;
   }
 }
 
