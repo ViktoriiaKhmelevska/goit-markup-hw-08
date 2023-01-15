@@ -56,18 +56,21 @@ button {
 }
 
 .footer__nav {
- @media (max-width: 468px) {
-  display: block;
-  }
+  text-align: center;
 
-  //  @media screen and (min-width: 469px) and (max-width: 1199px) {
-  // display: block;
-  // }
+   @media (min-width: 469px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+  }
  
   @media (min-width: 1200px) {
+    justify-content: space-between;
+    text-align: start;
   display: flex;
   align-items: center;
-  gap: 94px;
+  // gap: 94px;
 }
   }
 
@@ -75,6 +78,12 @@ button {
   padding: 0;
   margin-top: -62px;
   display: block;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    margin-right: 94px;
+}
 }
 
 .social__list {
@@ -194,4 +203,19 @@ button {
 
 .footer-form__icon {
   fill: currentColor;
+}
+.footer__text {
+    display: flex;
+    flex-direction: column;
+
+@media screen and (min-width: 768px){
+    margin-right: 165px;
+
+}
+ @media screen and (min-width: 1200px){
+    align-items: start;
+    justify-content: start;
+    margin-right: 70px;
+    margin-left: 0;
+}
 }

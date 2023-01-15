@@ -1,22 +1,24 @@
 .client__list {
   display: flex;
-  gap: 30px;
+
    flex-wrap: wrap;
+      align-content: center;
    justify-content: space-between;
 
    @media (min-width: 1200px) {
+      gap: 30px;
     flex-wrap: nowrap;
    }
 }
 
 .client__item {
-   height: 92px;
+  //  height: 92px;
     // max-width: 100%;
     @media (max-width: 479px){
     flex-basis: 210px;
   }
 
- @media (min-width: 768px){
+  @media (min-width: 480px) and (max-width: 780px){
   flex-basis: 226px;
  }
   @media (min-width: 1200px){
