@@ -18,13 +18,16 @@
   list-style: none;
 }
 
-@media (max-width: 479px) {
+@media (max-width: 480px) {
   .mobile-nav {
     display: none;
   }
 }
 
 .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
   min-height: 40px;
   min-width: 40px;
   display: flex;
