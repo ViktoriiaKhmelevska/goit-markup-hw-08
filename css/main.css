@@ -335,6 +335,9 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .site-nav {
@@ -815,6 +818,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    gap: 30px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -ms-flex-line-pack: center;
@@ -836,12 +840,7 @@ img {
   color: transparent;
 }
 
-@media (max-width: 479px) {
-  .benefits__item {
-    width: 450px;
-  }
-}
-@media (min-width: 480px) and (max-width: 780px) {
+@media (max-width: 780px) {
   .benefits__item {
     width: 354px;
   }
@@ -852,12 +851,6 @@ img {
   }
 }
 
-@media (max-width: 768px) {
-  .benefits__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
 .benefits__title {
   margin-bottom: 10px;
   color: #212121;
@@ -865,7 +858,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
 }
-@media (max-width: 479px) {
+@media (max-width: 768px) {
   .benefits__title {
     text-align: center;
   }
@@ -987,7 +980,6 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: -5px;
     gap: 30px;
   }
 }
@@ -1221,6 +1213,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 30px;
 }
 @media (min-width: 1200px) {
   .client__list {
@@ -1230,22 +1223,20 @@ img {
   }
 }
 
-@media (max-width: 479px) {
-  .client__item {
-    -ms-flex-preferred-size: 210px;
-        flex-basis: 210px;
-  }
+.client__item {
+  height: 92px;
+  max-width: 100%;
 }
-@media (min-width: 480px) and (max-width: 780px) {
+@media (min-width: 768px) {
   .client__item {
-    -ms-flex-preferred-size: 226px;
-        flex-basis: 226px;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media (min-width: 1200px) {
   .client__item {
-    -ms-flex-preferred-size: 170px;
-        flex-basis: 170px;
+    -ms-flex-preferred-size: calc((100% - 150px) / 6);
+        flex-basis: calc((100% - 150px) / 6);
   }
 }
 
@@ -1678,16 +1669,13 @@ button {
   margin: 0;
   list-style: none;
 }
-
 @media (max-width: 480px) {
   .mobile-nav {
     display: none;
   }
 }
+
 .menu-toggle {
-  position: absolute;
-  top: 16px;
-  right: 16px;
   min-height: 40px;
   min-width: 40px;
   display: -webkit-box;
@@ -1706,6 +1694,11 @@ button {
   border: none;
   border-radius: 50%;
   outline: none;
+}
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
 }
 
 .menu-toggle:hover,

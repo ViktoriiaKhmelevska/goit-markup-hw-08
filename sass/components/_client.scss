@@ -1,28 +1,30 @@
 .client__list {
   display: flex;
 
-   flex-wrap: wrap;
-      align-content: center;
-   justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  gap: 30px;
 
    @media (min-width: 1200px) {
-      gap: 30px;
+    gap: 30px;
     flex-wrap: nowrap;
    }
 }
 
 .client__item {
-  //  height: 92px;
-    // max-width: 100%;
-    @media (max-width: 479px){
-    flex-basis: 210px;
+   height: 92px;
+    max-width: 100%;
+  //   @media (max-width: 479px){
+    
+  // }
+
+  @media (min-width: 768px) {
+  flex-basis: calc((100% - 30px) / 2);
   }
 
-  @media (min-width: 480px) and (max-width: 780px){
-  flex-basis: 226px;
- }
   @media (min-width: 1200px){
-  flex-basis: 170px;
+  flex-basis: calc((100% - 150px) / 6);
   }
 }
 
