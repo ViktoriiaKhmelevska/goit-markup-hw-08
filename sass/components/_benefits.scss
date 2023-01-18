@@ -20,12 +20,16 @@
 }
 
 .benefits__item {
- @media (max-width: 780px) {
-    width: 354px;
+ @media (max-width: 779px) {
+    width: 100%;
  }
 
+@media (min-width: 768px) {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
   @media (min-width: 1200px){
-  width: 270px;
+     flex-basis: calc((100% - 60px) / 3);
    }
 }
 
@@ -46,6 +50,10 @@
   color: $accent-color;
   font-size: 14px;
   line-height: 1.71;
+  @media (max-width: 767px){
+      margin-bottom: 30px;
+  }
+
 }
 
 .benefits__icon {

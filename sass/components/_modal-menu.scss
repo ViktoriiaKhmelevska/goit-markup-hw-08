@@ -1,11 +1,32 @@
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: #fff;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition:transform 250ms $cubic;
+  
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
 .mobile-nav {
   padding: 0;
   margin: 0;
   list-style: none;
+  margin-bottom: 306px;
+}
 
-@media (max-width: 480px) {
-    display: none;
-  }
+.mobile-nav__item {
+  margin-bottom: 32px;
+  list-style: none;
+
 }
 
 .menu-toggle {
@@ -33,24 +54,6 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.menu-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  padding: 48px 40px;
-  background-color: #fff;
-  z-index: 999;
-
-  transform: translateX(100%);
-  transition:transform 250ms $cubic;
-  
-    display: flex;
-    flex-direction: column;
-    overflow-y: scroll;
-}
-
 .menu-container.is-open {
   transform: translateX(0);
 }
@@ -73,17 +76,17 @@ letter-spacing: 0.02em;
 }
 
 .mobile-nav__link__cur {
-    display: block;
-  text-decoration: none;
-  font-weight: 500;
+display: block;
+text-decoration: none;
+font-weight: 500;
 font-size: 40px;
 line-height: 1.175;
 letter-spacing: 0.02em;
-    color: $button-link-color;
-    }
+color: $button-link-color;
+}
 
 .mobile-nav-contact {
-    margin-bottom: 64px;
+ margin-bottom: 84px;
 }
 
 .mobile-nav-contact__item:not(:last-child)  {
@@ -96,9 +99,15 @@ font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
 font-size: 34px;
-line-height: 1.17x;
+line-height: 1.17;
 letter-spacing: 0.02em;
 color: #2196F3;
+list-style: none;
+text-decoration: none;
+
+@media (max-width: 420px) {
+font-size: 28px;
+}
 }
 
 .mobile-nav-contact__mail {
@@ -109,6 +118,11 @@ font-size: 24px;
 line-height: 1.16x;
 letter-spacing: 0.02em;
 color: #757575;
+text-decoration: none;
+
+@media (max-width: 420px) {
+  font-size: 18x;
+  }
 }
 
 .mobile-nav-social {
@@ -129,5 +143,9 @@ font-size: 18px;
 line-height: 1.22;
 letter-spacing: 0.02em;
 color: #2196F3;
+
+@media (max-width: 420px) {
+  font-size: 12px;
+}
 }
 

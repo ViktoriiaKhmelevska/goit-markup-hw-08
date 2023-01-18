@@ -15,16 +15,19 @@
 .client__item {
    height: 92px;
     max-width: 100%;
+  align-items: center;
+
+   flex-basis: calc((100% - 30px) / 2);
   //   @media (max-width: 479px){
     
   // }
 
   @media (min-width: 768px) {
-  flex-basis: calc((100% - 30px) / 2);
+  flex-basis: calc((100% - 60px) / 3);
   }
 
   @media (min-width: 1200px) {
-  flex-basis: calc((100% - 150px) / 6);
+  width: 170px;
   }
 }
 
