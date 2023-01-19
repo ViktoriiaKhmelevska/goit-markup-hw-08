@@ -20,10 +20,11 @@
   padding: 0;
   list-style: none;
 
-  @media (min-width: 479px) {
+  @media (min-width: 320px) {
       display: flex;
       flex-wrap: wrap;
        gap: 30px;
+
   }
   }
 
@@ -97,3 +98,4 @@
 
 }
 
+  // sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" loading="lazy"
