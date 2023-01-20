@@ -20,15 +20,21 @@
         <nav class="site-nav">
           <a href="./index.html" class="logo"><span class="logo__web">Web</span>Studio</a>
           <ul class="site-nav__menu">
-            <li class="site-nav__item site-nav__item--first"><a href="./index.html" class="site-nav__link">Студія</a></li>
-            <li class="site-nav__item site-nav__item--current"><a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфоліо</a></li>
+            <li class="site-nav__item site-nav__item--first">
+              <a href="./index.html" class="site-nav__link">Студія</a>
+            </li>
+            <li class="site-nav__item site-nav__item--current">
+              <a href="./portfolio.html" class="site-nav__link site-nav__link--current"
+                >Портфоліо</a
+              >
+            </li>
             <li class="site-nav__item"><a href="#" class="site-nav__link">Контакти</a></li>
           </ul>
         </nav>
         <ul class="auth-nav">
           <li class="auth-nav__item">
             <a class="auth-nav__contact" href="mailto:info@devstudio.com">
-              <svg class="auth-nav__icon" width="16" height="12">
+              <svg class="auth-nav__icon__envelope">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
@@ -36,7 +42,7 @@
           </li>
           <li class="auth-nav__item">
             <a class="auth-nav__contact" href="tel:+380961111111">
-              <svg class="auth-nav__icon" width="10" height="16">
+              <svg class="auth-nav__icon__phone">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -52,8 +58,9 @@
         <div class="container">
           <ul class="portfolio-menu">
             <li>
-              <button type="button" 
-              class="portfolio-menu__filter portfolio-menu__filter--active">Усі</button>
+              <button type="button" class="portfolio-menu__filter portfolio-menu__filter--active">
+                Усі
+              </button>
             </li>
             <li>
               <button type="button" class="portfolio-menu__filter">Веб-сайти</button>
@@ -72,14 +79,15 @@
           <ul class="project-gallery">
             <li>
               <a href="" class="project-gallery__link">
-              <div class="project-gallery__container">
-                <div class="project-gallery__card">
-                  <p class="project-gallery__text">
-   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
-   Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                  </p>
-                </div>
-                 <img src="./images/project1.jpg" alt="Технокряк" width="370" height="294" />
+                <div class="project-gallery__container">
+                  <div class="project-gallery__card">
+                    <p class="project-gallery__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                  <img src="./images/project1.jpg" alt="Технокряк" width="370" height="294" />
                 </div>
                 <div class="project-gallery__content">
                   <h2 class="project-gallery__title">Технокряк</h2>
@@ -89,20 +97,21 @@
             </li>
             <li>
               <a href="" class="project-gallery__link">
-                 <div class="project-gallery__container">
-                <div class="project-gallery__card">
-                  <p class="project-gallery__text">
-   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
-   Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                  </p>
+                <div class="project-gallery__container">
+                  <div class="project-gallery__card">
+                    <p class="project-gallery__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                  <img
+                    src="./images/project2.jpg"
+                    alt="Постер New Orlean vs Golden Star"
+                    width="370"
+                    height="294"
+                  />
                 </div>
-                <img
-                  src="./images/project2.jpg"
-                  alt="Постер New Orlean vs Golden Star"
-                  width="370"
-                  height="294"
-                />
-              </div>
                 <div class="project-gallery__content">
                   <h2 class="project-gallery__title">Постер New Orlean vs Golden Star</h2>
                   <p class="project-gallery__filter">Дизайн</p>
@@ -114,12 +123,18 @@
                 <div class="project-gallery__container">
                   <div class="project-gallery__card">
                     <p class="project-gallery__text">
-     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
-     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
                     </p>
                   </div>
-                    <img src="./images/project3.jpg" alt="Ресторан Seafood" width="370" height="294" />
-                  </div>
+                  <img
+                    src="./images/project3.jpg"
+                    alt="Ресторан Seafood"
+                    width="370"
+                    height="294"
+                  />
+                </div>
                 <div class="project-gallery__content">
                   <h2 class="project-gallery__title">Ресторан Seafood</h2>
                   <p class="project-gallery__filter">Додаток</p>
@@ -128,15 +143,16 @@
             </li>
             <li>
               <a href="" class="project-gallery__link">
-                   <div class="project-gallery__container">
-                <div class="project-gallery__card">
-                  <p class="project-gallery__text">
-   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
-   Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                  </p>
+                <div class="project-gallery__container">
+                  <div class="project-gallery__card">
+                    <p class="project-gallery__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                  <img src="./images/project4.jpg" alt="Проєкт Prime" width="370" height="294" />
                 </div>
-                <img src="./images/project4.jpg" alt="Проєкт Prime" width="370" height="294" />
-              </div>
                 <div class="project-gallery__content">
                   <h2 class="project-gallery__title">Проєкт Prime</h2>
                   <p class="project-gallery__filter">Маркетинг</p>
@@ -146,14 +162,15 @@
             <li>
               <a href="" class="project-gallery__link">
                 <div class="project-gallery__container">
-                <div class="project-gallery__card">
-                  <p class="project-gallery__text">
-   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
-   Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                  </p>
+                  <div class="project-gallery__card">
+                    <p class="project-gallery__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                  <img src="./images/project5.jpg" alt="Проєкт Boxes" width="370" height="294" />
                 </div>
-                <img src="./images/project5.jpg" alt="Проєкт Boxes" width="370" height="294" />
-              </div>
                 <div class="project-gallery__content">
                   <h2 class="project-gallery__title">Проєкт Boxes</h2>
                   <p class="project-gallery__filter">Додаток</p>
@@ -162,20 +179,21 @@
             </li>
             <li>
               <a href="" class="project-gallery__link">
-                              <div class="project-gallery__container">
-                <div class="project-gallery__card">
-                  <p class="project-gallery__text">
-   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
-   Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                  </p>
+                <div class="project-gallery__container">
+                  <div class="project-gallery__card">
+                    <p class="project-gallery__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                  <img
+                    src="./images/project6.jpg"
+                    alt="Натхнення не має кордонів"
+                    width="370"
+                    height="294"
+                  />
                 </div>
-                <img
-                  src="./images/project6.jpg"
-                  alt="Натхнення не має кордонів"
-                  width="370"
-                  height="294"
-                />
-              </div>
                 <div class="project-gallery__content">
                   <h2 class="project-gallery__title">Inspiration has no Borders</h2>
                   <p class="project-gallery__filter">Веб-сайт</p>
@@ -185,19 +203,20 @@
             <li>
               <a href="" class="project-gallery__link">
                 <div class="project-gallery__container">
-                <div class="project-gallery__card">
-                  <p class="project-gallery__text">
-   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
-   Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                  </p>
+                  <div class="project-gallery__card">
+                    <p class="project-gallery__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                  <img
+                    src="./images/project7.jpg"
+                    alt="Видання Limited Edition"
+                    width="370"
+                    height="294"
+                  />
                 </div>
-                <img
-                  src="./images/project7.jpg"
-                  alt="Видання Limited Edition"
-                  width="370"
-                  height="294"
-                />
-              </div>
                 <div class="project-gallery__content">
                   <h2 class="project-gallery__title">Видання Limited Edition</h2>
                   <p class="project-gallery__filter">Дизайн</p>
@@ -206,15 +225,16 @@
             </li>
             <li>
               <a href="" class="project-gallery__link">
-               <div class="project-gallery__container">
-                <div class="project-gallery__card">
-                  <p class="project-gallery__text">
-   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
-   Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                  </p>
+                <div class="project-gallery__container">
+                  <div class="project-gallery__card">
+                    <p class="project-gallery__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                  <img src="./images/project8.jpg" alt="Проєкт LAB" width="370" height="294" />
                 </div>
-                <img src="./images/project8.jpg" alt="Проєкт LAB" width="370" height="294" />
-              </div>
                 <div class="project-gallery__content">
                   <h2 class="project-gallery__title">Проєкт LAB</h2>
                   <p class="project-gallery__filter">Маркетинг</p>
@@ -223,15 +243,21 @@
             </li>
             <li>
               <a href="" class="project-gallery__link">
-                  <div class="project-gallery__container">
-                <div class="project-gallery__card">
-                  <p class="project-gallery__text">
-   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
-   Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-                  </p>
+                <div class="project-gallery__container">
+                  <div class="project-gallery__card">
+                    <p class="project-gallery__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                  <img
+                    src="./images/project9.jpg"
+                    alt="Зростаючий бізнес"
+                    width="370"
+                    height="294"
+                  />
                 </div>
-                <img src="./images/project9.jpg" alt="Зростаючий бізнес" width="370" height="294" />
-              </div>
                 <div class="project-gallery__content">
                   <h2 class="project-gallery__title">Growing Business</h2>
                   <p class="project-gallery__filter">Додаток</p>
@@ -262,8 +288,7 @@
                 <a href="mailto:info@devstudio.com" class="footer__link">info@devstudio.com</a>
               </li>
               <li class="adress__item">
-                <a href="tel:+380961111111" 
-                class="footer__link">+38 096 111 11 11</a>
+                <a href="tel:+380961111111" class="footer__link">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
@@ -304,13 +329,14 @@
         <div class="footer-form">
           <h4 class="footer-form__title">Підпишіться на розсилку</h4>
           <form class="footer-form__position" autocomplete="off">
-                 <input class="footer-form__input" id="email" type="email" placeholder="E-mail">
-              <button class="footer-form__submit" type="submit">Підписатися
-                   <svg class="footer-form__icon" width="24" height="24">
-            <use href="./images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
-            </form>
+            <input class="footer-form__input" id="email" type="email" placeholder="E-mail" />
+            <button class="footer-form__submit" type="submit">
+              Підписатися
+              <svg class="footer-form__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
