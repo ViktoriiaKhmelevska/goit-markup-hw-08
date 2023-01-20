@@ -1,7 +1,6 @@
 .button-active {
   min-width: 200px;
   padding: 10px 24px;
-  nav-left: auto;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px $button-shadow;
   border-radius: 4px;
@@ -16,7 +15,8 @@
 
   transition: background-color $cubic;
 
-    &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: $button-active;
-    }
+  }
 }
